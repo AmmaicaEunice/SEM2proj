@@ -7,16 +7,17 @@
 
 body {
 	background-color: E9F1F4;
+	margin: 0px;
+	padding: 0px;
 }
 
 .header {
-	width: 100%;
-	height: auto;
-	background-color: FEDBC5;
-	background-image: url("/Images/BackgroundHeader.png");
-	background-size: cover;
-  	background-position: center;
-  	background-repeat: no-repeat;
+	width: 1351;
+	height: 203;
+	background-image: url("Images/BGHeader.png");
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	position:fixed;
 }
 
 .LRT {
@@ -26,12 +27,12 @@ body {
 }
 
 .main{
-	<--background-image: url("Images/MainBanner.png");
 	box-shadow: 2px 2px 2px #888888;
 	background-color: 369f9a;
 	width: 949;
 	height: 532;
 	margin: 5 auto;
+	top:0;
 	padding: 10px;
 	border-radius: 5px;
 }
@@ -40,6 +41,7 @@ body {
 	color: orange;
 	text-align: left;
 	font-family: Raleway;
+	line-height:60px; margin:0 auto; width:940px; text-align:center;
 }
 
 .intro{
@@ -52,7 +54,9 @@ body {
 	width: 95%;
 	height: 90%;
 }
-
+#intext{
+	font-size: 24;
+}
 .two {
 	margin-left: 30px;
 }
