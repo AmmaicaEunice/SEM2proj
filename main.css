@@ -1,14 +1,21 @@
-/*para sa drop down menu*/
 @font-face
 {
-	font-family: raleway;
-	src: url('fonts/Raleway-Regular.ttf');
+	font-family: iron;
+	src: url('fonts/Iron & Brine.ttf');
 }
 
 body {
-	background-color: E9F1F4;
+	background-color: #e9f1f4;
 	margin: 0px;
 	padding: 0px;
+}
+#link{
+	color: white;
+	text-decoration: none;
+}
+
+#link:hover {
+    color: #ffc75b;
 }
 
 .header {
@@ -21,64 +28,24 @@ body {
 	margin: 0 auto;
 }
 
-.menu
-{
-	background-color:#7f2dc3;
-	width: 900;
-	font-size-adjust:0.58;
-	margin:auto;
-	position:fixed;
-	z-index:101; /*just to set this as the topmost div. can change to any value not less than the number of divs*/
-	box-shadow: 1px 1px 1px 1px gray;
-	background-color:#010c31;
-}
-/*drop down menu*/
-
-ul.ddMenu, ul.ddMenu ul
-	{
-	list-style:none;
-	margin:0; padding:0px;
-	}
-
-ul.ddMenu ul 						
-	{ 
-        display:none;
-        position:absolute; 
-		border:0px;
-        padding:0px;
-        background:#010c31;
-	}
-
-ul.ddMenu li:hover > ul 			
-	{ 
-		display:block;
-	}	
-
-ul.ddMenu li a
-        {
-        display: block; 
-        padding: 22px;
-        color: white;
-        font-family: Calibri;
-        font-size: 15px;
-    }
-
-ul.ddMenu li:hover
-        { 
-        background:#7f2dc3;
-    }
-
-ul.ddMenu li
-        { 
-        background:7f2dc3;
-    }
-
-li.course
-{
-	border:1px solid black;
-}
-
 .filler{
+	padding-top:30;
+}
+
+.menu{
+	width: 80%;
+	height: 10%;
+	transform: translateX(+12%);
+	border-radius: 5px;
+	background-color: #7b29c0;
+	font-family: Calibri;
+	position:fixed;
+	padding: 5;
+	z-index:101; /*just to set this as the topmost div. can change to any value not less than the number of divs*/
+	margin: 25 auto;
+}
+
+.filler2{
 	padding:120;
 }
 	
@@ -100,10 +67,10 @@ li.course
 }
 
 #welcome{
-	color: orange;
+	color: #3d0d6d;
+	font-family: iron;
 	text-align: left;
-	font-family: Raleway;
-	line-height:60px; margin:0 auto; width:940px; text-align:center;
+	padding-left: 145;
 }
 
 .intro{
@@ -116,6 +83,7 @@ li.course
 	width: 95%;
 	height: 90%;
 }
+
 #intext{
 	font-size: 24;
 }
