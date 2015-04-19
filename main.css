@@ -1,4 +1,9 @@
 /*para sa drop down menu*/
+@font-face
+{
+	font-family: raleway;
+	src: url('fonts/Raleway-Regular.ttf');
+}
 
 body {
 	background-color: E9F1F4;
@@ -22,9 +27,30 @@ body {
 
 .main{
 	<--background-image: url("Images/MainBanner.png");
+	box-shadow: 2px 2px 2px #888888;
+	background-color: 369f9a;
 	width: 949;
 	height: 532;
-	margin: 0 auto ;
+	margin: 5 auto;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#welcome{
+	color: orange;
+	text-align: left;
+	font-family: Raleway;
+}
+
+.intro{
+	border-radius: 5px;
+	background-color: white;
+	text-align: justify;
+	margin: 5 auto;
+	opacity: 0.90;
+    padding: 20px; 
+	width: 95%;
+	height: 90%;
 }
 
 .two {
