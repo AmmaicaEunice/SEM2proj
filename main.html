@@ -4,45 +4,62 @@
 <script src="dots.js"></script>
 <script src="jquery.js"></script>
 <script src="jquery2.js"></script>
+<script>
+	window.onload = function() {
+		document.getElementById("username").innerHTML = "Guest";
+	}
+</script>
 </head>
 <body>
-<div class="header">
-<h1 id="head">
-LRT1 Landmarks
-</h1>
-<div class="menu">
-<p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="main.html" id="link"><img src="Images\HomeImage.png"></a>           
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="stations.html" id="link">Stations</a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
-		<a href="about.html" id="link">About</a> 
-</p>
-</div>
-</div>
-
-<div class="filler2">
-</div>
-
-<h1 id="welcome">
-Welcome to LRT1 Landmarks
-</h1>
-
-<div class="main">
-	<div class="intro">
-	<p id="intext">
-	The Light Rail Transit Authority is recognized as the premiere rail transit in the country providing reliable, efficient, dependable, and environment-friendly mass rail services to all residents of Metro Manila. LRTA is a wholly owned government corporation created on July 12, 1980 under Executive Order (EO) No. 603, as amended by EO No. 830 dated September 1982, and EO No. 210 dated July 7, 1987. The LRTA is primarily responsible for the construction, operation, maintenance and/or lease of light rail transit systems in the Philippines.
-A pioneer of the industry since 1984, LRTA has become the country's prime mover in the rail transport sector serving the needs of millions of Filipinos by exploring avenues where the LRT system could continuously provide efficient transport services while promoting economy and efficiency of operations.
-	More at <a href="http://www.lrta.gov.ph/index.php/2014-05-21-01-05-51/2014-05-22-02-12-18/2014-05-22-02-13-21">www.lrta.gov.ph</a>
-	<br><br><p align=center id="intext">LRT1 Landmarks will help commuters know different landmarks from LRT1 stations.</p>
-	</p>
-	
-	<div class="SLinks">
-	<p align=center>
-	<a href="stations.html" id="link">START</a> </p>
+	<div class="header">
+		<h1 id="head">LRT1 Landmarks</h1>
+		<div class="menu">
+			<p>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="main.html" id="link"><img
+					src="Images/HomeImage.png"></a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="stations.html"
+					id="link">Stations</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+					href="about.html" id="link">About</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hello, <label
+					id="username"></label>!
+					<input id="userid" type="hidden" value="#{UserAccount.username}" />
+			</p>
+		</div>
 	</div>
-	
-</div>
+
+	<div class="filler2"></div>
+
+	<h1 id="welcome">Welcome to LRT1 Landmarks</h1>
+
+	<div class="main">
+		<div class="intro">
+			<p id="intext">
+				The Light Rail Transit Authority is recognized as the premiere rail
+				transit in the country providing reliable, efficient, dependable,
+				and environment-friendly mass rail services to all residents of
+				Metro Manila. LRTA is a wholly owned government corporation created
+				on July 12, 1980 under Executive Order (EO) No. 603, as amended by
+				EO No. 830 dated September 1982, and EO No. 210 dated July 7, 1987.
+				The LRTA is primarily responsible for the construction, operation,
+				maintenance and/or lease of light rail transit systems in the
+				Philippines. A pioneer of the industry since 1984, LRTA has become
+				the country's prime mover in the rail transport sector serving the
+				needs of millions of Filipinos by exploring avenues where the LRT
+				system could continuously provide efficient transport services while
+				promoting economy and efficiency of operations. More at <a
+					href="http://www.lrta.gov.ph/index.php/2014-05-21-01-05-51/2014-05-22-02-12-18/2014-05-22-02-13-21">www.lrta.gov.ph</a>
+				<br>
+				<br>
+			<p align=center id="intext">LRT1 Landmarks will help commuters
+				know different landmarks from LRT1 stations.</p>
+			</p>
+
+			<div class="SLinks">
+				<p align=center>
+					<a href="stations.html" id="link">START</a>
+				</p>
+			</div>
+
+		</div>
 </body>
 </html>

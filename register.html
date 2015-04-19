@@ -4,461 +4,419 @@
 </head>
 <body>
 	<div class="header">
-		<br>
-		<br>
-		<br> <br>
-		<br>
-		<br>
+		<h1 id="head">Register</h1>
+		<div class="menu">
+			<p>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="main.html" id="link"><img
+					src="Images/HomeImage.png"></a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="stations.html"
+					id="link">Stations</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+					href="about.html" id="link">About</a>
+			</p>
+		</div>
 	</div>
 
-	<div class="divider">
-		<br>
-	</div>
-	<!--<div
-		style="background-color: black; height: 40; width: 100%; margin-bottom: 5px">
-		<table>
-			<tr>
-				<td width="10"></td>
-				<td>
-					<ul class="ddMenu">
-						<li><a href="main.html" class="menu">Home</a></li>
-					</ul>
-				</td>
-				<td width="30"></td>
-				<td style="color: white">|</td>
-				<td width="30"></td>
-				<td>
-					<ul class="ddMenu">
-						<li><a href="cur.html" class="menu">Curriculum</a></li>
-					</ul>
-				</td>
-				<td width="30"></td>
-				<td style="color: white">|</td>
-				<td width="30"></td>
-				<td>
-					<ul class="ddMenu">
-						<li><a href="org.html" class="menu">Organizations</a></li>
-					</ul>
-				</td>
-				<td width="30"></td>
-				<td style="color: white">|</td>
-				<td width="30"></td>
-				<td>
-					<ul class="ddMenu">
-						<li><a href="acadlife.html" class="menu">Academic Life</a></li>
-					</ul>
-				</td>
-				<td width="500"></td>
-				<td>
-					<ul class="ddMenu">
-						<li><a href="source.html" class="menu">Sources</a></li>
-					</ul>
-				</td>
-			</tr>
-		</table>
-	</div>
-	-->
-
+	<div class="filler2"></div>
 	<div>
-		<table>
-			<!-- width="60%" border="0" class="lista" -->
+		<form method="post" action="Register">
+			<table>
+				<!-- width="60%" border="0" class="lista" -->
 
-			<tr>
-				<td align="left">User:</td>
-				<td align="left" class="lista"><input type="text" size="40"
-					name="user" id="user" value="" /></td>
-			</tr>
-
-
-			<tr>
-				<td align="left">Password:</td>
-
-				<td align="left" class="lista"><input type="password" size="40"
-					id="want_password" name="pwd"
-					onkeyup="EvalPwdStrength(document.forms[0],this.value);" /> <!-- The textbox itself onkeyup-->
+				<tr>
+					<td align="left">Username:</td>
+					<td align="left" class="lista"><input type="text" size="40"
+						name="user" id="user" value="" /></td>
+				</tr>
 
 
+				<tr>
+					<td align="left">Password:</td>
 
-					<!-- ### Password strength tables and columns ### -->
-					<div id="pwdstrenght" style="display: none;">
-						<table>
-							<!-- border="0" width="268px" align="left" -->
-							<tr>
-								<td id="idSM1" class="pwdChkCon0" align="center" width="25%">
-									<span id="idSMT1" style="display: none;">Weak</span>
-								</td>
+					<td align="left" class="lista"><input type="password"
+						size="40" id="want_password" name="pwd"
+						onkeyup="EvalPwdStrength(document.forms[0],this.value);" /> <!-- The textbox itself onkeyup-->
 
-								<td id="idSM2" class="pwdChkCon0" align="center" width="25%">
-									<span id="idSMT0" style="display: none;"> <!-- NOT RATED -->
-								</span> <span id="idSMT2" style="display: none;">Medium</span>
-								</td>
 
-								<td id="idSM3" class="pwdChkCon0" align="center" width="25%">
-									<span id="idSMT3" style="display: none;">Safe</span>
-								</td>
 
-								<td id="idSM4" class="pwdChkCon0" align="center" width="25%">
-									<span id="idSMT4" style="display: none;">Strong</span>
-								</td>
-							</tr>
-						</table>
-					</div> <!-- ### End ### --></td>
-			</tr>
+						<!-- ### Password strength tables and columns ### -->
+						<div id="pwdstrenght" style="display: none;">
+							<table>
+								<!-- border="0" width="268px" align="left" -->
+								<tr>
+									<td id="idSM1" class="pwdChkCon0" align="center" width="25%">
+										<span id="idSMT1" style="display: none;">Weak</span>
+									</td>
 
-			<tr>
-				<td align="left">Repeat password:</td>
-				<td align="left" class="lista"><input type="password" size="40"
-					id="check_password" name="pwd1" /></td>
-			</tr>
-			<tr>
-				<td align="left">Language:</td>
-				<td align="left" class="lista"><select name="language" size="1">
-						<option value="10">Bulgarian</option>
-						<option value="5">Dutch</option>
-						<option selected="selected" value="1">English</option>
-						<option value="12">Español</option>
-						<option value="13">Finnish</option>
-						<option value="11">French</option>
-						<option value="8">German</option>
-						<option value="16">Greek</option>
-						<option value="9">Hungarian</option>
-						<option value="6">Italiano</option>
-						<option value="3">Polish</option>
-						<option value="15">Portuguese BR</option>
-						<option value="14">Portuguese PT</option>
-						<option value="2">Romanian</option>
-						<option value="7">Russian</option>
-						<option value="4">Srpsko-Hrvatski</option>
-						<option value="17">Swedish</option>
-						<option value="18">Vietnamese</option>
-				</select></td>
-			</tr>
+									<td id="idSM2" class="pwdChkCon0" align="center" width="25%">
+										<span id="idSMT0" style="display: none;"> <!-- NOT RATED -->
+									</span> <span id="idSMT2" style="display: none;">Medium</span>
+									</td>
 
-			<tr>
-				<td align="left">Country:</td>
-				<td align="left" class="lista"><select name="flag" size="1">
-						<option value='0'>---</option>
-						<option value="54">Afghanistan</option>
-						<option value="102">Aland Islands</option>
-						<option value="65">Albania</option>
-						<option value="35">Algeria</option>
-						<option value="3">American Samoa</option>
-						<option value="68">Andorra</option>
-						<option value="36">Angola</option>
-						<option value="27">Anguilla</option>
-						<option value="91">Antarctica</option>
-						<option value="89">Antigua Barbuda</option>
-						<option value="19">Argentina</option>
-						<option value="28">Armenia</option>
-						<option value="38">Aruba</option>
-						<option value="20">Australia</option>
-						<option value="37">Austria</option>
-						<option value="103">Azerbaijan</option>
-						<option value="82">Bahamas</option>
-						<option value="105">Bahrain</option>
-						<option value="86">Bangladesh</option>
-						<option value="85">Barbados</option>
-						<option value="114">Belarus</option>
-						<option value="16">Belgium</option>
-						<option value="34">Belize</option>
-						<option value="107">Benin</option>
-						<option value="108">Bermuda</option>
-						<option value="111">Bhutan</option>
-						<option value="110">Bolivia</option>
-						<option value="67">Bosnia and Herzegovina</option>
-						<option value="113">Botswana</option>
-						<option value="112">Bouvet Island</option>
-						<option value="18">Brazil</option>
-						<option value="155">British Indian Ocean Territory</option>
-						<option value="109">Brunei Darussalam</option>
-						<option value="104">Bulgaria</option>
-						<option value="60">Burkina Faso</option>
-						<option value="106">Burundi</option>
-						<option value="84">Cambodia</option>
-						<option value="120">Cameroon</option>
-						<option value="5">Canada</option>
-						<option value="122">Cape Verde</option>
-						<option value="162">Cayman Islands</option>
-						<option value="117">Central African Republic</option>
-						<option value="224">Chad</option>
-						<option value="51">Chile</option>
-						<option value="8">China</option>
-						<option value="123">Christmas Island</option>
-						<option value="115">Cocos (Keeling) Islands</option>
-						<option value="99">Colombia</option>
-						<option value="159">Comoros</option>
-						<option value="53">Congo</option>
-						<option value="116">Congo, the Democratic Republic of the</option>
-						<option value="119">Cook Islands</option>
-						<option value="121">Costa Rica</option>
-						<option value="97">Croatia</option>
-						<option value="52">Cuba</option>
-						<option value="124">Cyprus</option>
-						<option value="46">Czech Republic</option>
-						<option value="10">Denmark</option>
-						<option value="125">Djibouti</option>
-						<option value="126">Dominica</option>
-						<option value="41">Dominican Republic</option>
-						<option value="81">Ecuador</option>
-						<option value="127">Egypt</option>
-						<option value="220">El Salvador</option>
-						<option value="146">Equatorial Guinea</option>
-						<option value="129">Eritrea</option>
-						<option value="98">Estonia</option>
-						<option value="130">Ethiopia</option>
-						<option value="132">Falkland Islands (Malvinas)</option>
-						<option value="134">Faroe Islands</option>
-						<option value="131">Fiji</option>
-						<option value="4">Finland</option>
-						<option value="6">France</option>
-						<option value="138">French Guiana</option>
-						<option value="200">French Polynesia</option>
-						<option value="225">French Southern Territories</option>
-						<option value="135">Gabon</option>
-						<option value="143">Gambia</option>
-						<option value="137">Georgia</option>
-						<option value="7">Germany</option>
-						<option value="140">Ghana</option>
-						<option value="141">Gibraltar</option>
-						<option value="42">Greece</option>
-						<option value="142">Greenland</option>
-						<option value="136">Grenada</option>
-						<option value="145">Guadeloupe</option>
-						<option value="148">Guam</option>
-						<option value="43">Guatemala</option>
-						<option value="139">Guernsey</option>
-						<option value="144">Guinea</option>
-						<option value="149">Guinea-Bissau</option>
-						<option value="150">Guyana</option>
-						<option value="152">Haiti</option>
-						<option value="151">Heard Island and McDonald Islands</option>
-						<option value="235">Holy See (Vatican City State)</option>
-						<option value="79">Honduras</option>
-						<option value="33">Hong Kong</option>
-						<option value="74">Hungary</option>
-						<option value="62">Iceland</option>
-						<option value="70">India</option>
-						<option value="153">Indonesia</option>
-						<option value="244">Iran, Islamic Republic of</option>
-						<option value="243">Iraq</option>
-						<option value="13">Ireland</option>
-						<option value="154">Isle of Man</option>
-						<option value="44">Israel</option>
-						<option value="9">Italy</option>
-						<option value="118">Ivory Coast</option>
-						<option value="31">Jamaica</option>
-						<option value="17">Japan</option>
-						<option value="156">Jersey</option>
-						<option value="157">Jordan</option>
-						<option value="163">Kazahstan</option>
-						<option value="158">Kenya</option>
-						<option value="58">Kiribati</option>
-						<option value="161">Kuwait</option>
-						<option value="80">Kyrgyzstan</option>
-						<option value="87">Laos</option>
-						<option value="170">Latvia</option>
-						<option value="164">Lebanon</option>
-						<option value="169">Lesotho</option>
-						<option value="168">Liberia</option>
-						<option value="171">Libyan Arab Jamahiriya</option>
-						<option value="166">Liechtenstein</option>
-						<option value="69">Lithuania</option>
-						<option value="32">Luxembourg</option>
-						<option value="181">Macao</option>
-						<option value="177">Macedonia, the former Yugoslav
-							Republic of</option>
-						<option value="175">Madagascar</option>
-						<option value="189">Malawi</option>
-						<option value="40">Malaysia</option>
-						<option value="188">Maldives</option>
-						<option value="178">Mali</option>
-						<option value="186">Malta</option>
-						<option value="176">Marshall Islands</option>
-						<option value="183">Martinique</option>
-						<option value="184">Mauritania</option>
-						<option value="187">Mauritius</option>
-						<option value="240">Mayotte</option>
-						<option value="25">Mexico</option>
-						<option value="133">Micronesia, Federated States of</option>
-						<option value="174">Moldova, Republic of</option>
-						<option value="173">Monaco</option>
-						<option value="180">Mongolia</option>
-						<option value="185">Montserrat</option>
-						<option value="172">Morocco</option>
-						<option value="190">Mozambique</option>
-						<option value="179">Myanmar</option>
-						<option value="191">Namibia</option>
-						<option value="63">Nauru</option>
-						<option value="196">Nepal</option>
-						<option value="15">Netherlands</option>
-						<option value="71">Netherlands Antilles</option>
-						<option value="192">New Caledonia</option>
-						<option value="21">New Zealand</option>
-						<option value="195">Nicaragua</option>
-						<option value="193">Niger</option>
-						<option value="61">Nigeria</option>
-						<option value="197">Niue</option>
-						<option value="194">Norfolk Island</option>
-						<option value="96">North Korea</option>
-						<option value="182">Northern Mariana Islands</option>
-						<option value="11">Norway</option>
-						<option value="198">Oman</option>
-						<option value="101">Organization</option>
-						<option value="45">Pakistan</option>
-						<option value="205">Palau</option>
-						<option value="204">Palestinian Territory, Occupied</option>
-						<option value="199">Panama</option>
-						<option value="201">Papua New Guinea</option>
-						<option value="90">Paraguay</option>
-						<option value="83">Peru</option>
-						<option value="59">Philippines</option>
-						<option value="203">Pitcairn</option>
-						<option value="14">Poland</option>
-						<option value="24">Portugal</option>
-						<option value="50">Puerto Rico</option>
-						<option value="206">Qatar</option>
-						<option value="207">Reunion</option>
-						<option value="75">Romania</option>
-						<option value="92">Russian Federation</option>
-						<option value="208">Rwanda</option>
-						<option value="212">Saint Helena</option>
-						<option value="160">Saint Kitts and Nevis</option>
-						<option value="165">Saint Lucia</option>
-						<option value="202">Saint Pierre and Miquelon</option>
-						<option value="236">Saint Vincent and the Grenadines</option>
-						<option value="39">Samoa</option>
-						<option value="216">San Marino</option>
-						<option value="219">Sao Tome and Principe</option>
-						<option value="209">Saudi Arabia</option>
-						<option value="94">Senegal</option>
-						<option value="47">Serbia and Montenegro</option>
-						<option value="48">Seychelles</option>
-						<option value="215">Sierra Leone</option>
-						<option value="26">Singapore</option>
-						<option value="214">Slovakia</option>
-						<option value="64">Slovenia</option>
-						<option value="210">Solomon Islands</option>
-						<option value="217">Somalia</option>
-						<option value="29">South Africa</option>
-						<option value="147">South Georgia and the South Sandwich
-							Islands</option>
-						<option value="30">South Korea</option>
-						<option value="23">Spain</option>
-						<option value="167">Sri Lanka</option>
-						<option value="211">Sudan</option>
-						<option value="218">Suriname</option>
-						<option value="213">Svalbard and Jan Mayen</option>
-						<option value="222">Swaziland</option>
-						<option value="1">Sweden</option>
-						<option value="57">Switzerland</option>
-						<option value="221">Syrian Arab Republic</option>
-						<option value="49">Taiwan</option>
-						<option value="226">Tajikistan</option>
-						<option value="232">Tanzania, United Republic of</option>
-						<option value="93">Thailand</option>
-						<option value="228">Timor-Leste</option>
-						<option value="95">Togo</option>
-						<option value="227">Tokelau</option>
-						<option value="230">Tonga</option>
-						<option value="78">Trinidad and Tobago</option>
-						<option value="229">Tunisia</option>
-						<option value="55">Turkey</option>
-						<option value="66">Turkmenistan</option>
-						<option value="223">Turks and Caicos Islands</option>
-						<option value="231">Tuvalu</option>
-						<option value="233">Uganda</option>
-						<option value="72">Ukraine</option>
-						<option value="22">United Arab Emirates</option>
-						<option value="12">United Kingdom</option>
-						<option value="234">United States Minor Outlying Islands</option>
-						<option value="2">United States of America</option>
-						<option value="88">Uruguay</option>
-						<option value="56">Uzbekistan</option>
-						<option value="76">Vanuatu</option>
-						<option value="73">Venezuela</option>
-						<option value="77">Viet Nam</option>
-						<option value="237">Virgin Islands, British</option>
-						<option value="238">Wallis and Futuna</option>
-						<option value="128">Western Sahara</option>
-						<option value="239">Yemen</option>
-						<option value="241">Zambia</option>
-						<option value="242">Zimbabwe</option>
-				</select></td>
-			</tr>
-			<tr>
-				<td align="left">Timezone:</td>
-				<td align="left" class="lista"><select name="timezone">
-						<option value="-1">(GMT - 1:00 hours) Azores, Cape Verde
-							Islands</option>
-						<option value="-10">(GMT - 10:00 hours) Hawaii</option>
-						<option value="-11">(GMT - 11:00 hours) Midway Island,
-							Samoa</option>
-						<option value="-12">(GMT - 12:00 hours) Enitwetok,
-							Kwajalien</option>
-						<option value="-2">(GMT - 2:00 hours) Mid-Atlantic,
-							Ascention Is., St Helena</option>
-						<option value="-3">(GMT - 3:00 hours) Brazil, Buenos
-							Aires, Falkland Is.</option>
-						<option value="-3.5">(GMT - 3:30 hours) Newfoundland</option>
-						<option value="-4">(GMT - 4:00 hours) Atlantic Time
-							(Canada), Caracas, La Paz</option>
-						<option selected="selected" value="-5">(GMT - 5:00 hours)
-							Eastern Time (US &amp; Canada), Bogota, Lima</option>
-						<option value="-6">(GMT - 6:00 hours) Central Time (US
-							&amp; Canada), Mexico City</option>
-						<option value="-7">(GMT - 7:00 hours) Mountain Time (US
-							&amp; Canada)</option>
-						<option value="-8">(GMT - 8:00 hours) Pacific Time (US
-							&amp; Canada)</option>
-						<option value="-9">(GMT - 9:00 hours) Alaska</option>
-						<option value="0">(GMT) Casablanca, Dublin, London,
-							Lisbon, Monrovia</option>
-						<option value="1">(GMT + 1:00 hours) Amsterdam, Brussels,
-							Copenhagen, Madrid, Paris</option>
-						<option value="10">(GMT + 10:00 hours) Melbourne, Papua
-							New Guinea, Sydney</option>
-						<option value="11">(GMT + 11:00 hours) Magadan, New
-							Caledonia, Solomon Is.</option>
-						<option value="12">(GMT + 12:00 hours) Auckland, Fiji,
-							Marshall Island</option>
-						<option value="2">(GMT + 2:00 hours) Kaliningrad, South
-							Africa</option>
-						<option value="3">(GMT + 3:00 hours) Baghdad, Riyadh,
-							Moscow, Nairobi</option>
-						<option value="3.5">(GMT + 3:30 hours) Tehran</option>
-						<option value="4">(GMT + 4:00 hours) Abu Dhabi, Baku,
-							Muscat, Tbilisi</option>
-						<option value="4.5">(GMT + 4:30 hours) Kabul</option>
-						<option value="5">(GMT + 5:00 hours) Ekaterinburg,
-							Karachi, Tashkent</option>
-						<option value="5.5">(GMT + 5:30 hours) Bombay, Calcutta,
-							Madras, New Delhi</option>
-						<option value="6">(GMT + 6:00 hours) Almaty, Colomba,
-							Dhakra</option>
-						<option value="7">(GMT + 7:00 hours) Bangkok, Hanoi,
-							Jakarta</option>
-						<option value="8">(GMT + 8:00 hours) Hong Kong, Perth,
-							Singapore, Taipei</option>
-						<option value="9">(GMT + 9:00 hours) Osaka, Sapporo,
-							Seoul, Tokyo, Yakutsk</option>
-						<option value="9.5">(GMT + 9:30 hours) Adelaide, Darwin</option>
-				</select></td>
-			</tr>
+									<td id="idSM3" class="pwdChkCon0" align="center" width="25%">
+										<span id="idSMT3" style="display: none;">Safe</span>
+									</td>
 
-			<tr>
-				<td align="left">Verification:</td>
-				<td align="left" class="lista"><script type="text/javascript"
-						src="http://www.google.com/recaptcha/api/challenge?k=6LeXC9MSAAAAAE4qbGp6ghLVY-nMI_6BZUnJ0HKk"></script>
-				</td>
-			</tr>
+									<td id="idSM4" class="pwdChkCon0" align="center" width="25%">
+										<span id="idSMT4" style="display: none;">Strong</span>
+									</td>
+								</tr>
+							</table>
+						</div> <!-- ### End ### --></td>
+				</tr>
 
-			<tr>
-				<td align="left" colspan="2"><input
-					style='margin: 0px 0px 0px 123px' type="submit" name="submit"
-					value="Submit" /></td>
-			</tr>
+				<tr>
+					<td align="left">Repeat password:</td>
+					<td align="left" class="lista"><input type="password"
+						size="40" id="check_password" name="pwd1" /></td>
+				</tr>
+				<tr>
+					<td align="left">Language:</td>
+					<td align="left" class="lista"><select name="language"
+						size="1">
+							<option value="10">Bulgarian</option>
+							<option value="5">Dutch</option>
+							<option selected="selected" value="1">English</option>
+							<option value="12">Español</option>
+							<option value="13">Finnish</option>
+							<option value="11">French</option>
+							<option value="8">German</option>
+							<option value="16">Greek</option>
+							<option value="9">Hungarian</option>
+							<option value="6">Italiano</option>
+							<option value="3">Polish</option>
+							<option value="15">Portuguese BR</option>
+							<option value="14">Portuguese PT</option>
+							<option value="2">Romanian</option>
+							<option value="7">Russian</option>
+							<option value="4">Srpsko-Hrvatski</option>
+							<option value="17">Swedish</option>
+							<option value="18">Vietnamese</option>
+					</select></td>
+				</tr>
 
-		</table>
+				<tr>
+					<td align="left">Country:</td>
+					<td align="left" class="lista"><select name="flag" size="1">
+							<option value='0'>---</option>
+							<option value="54">Afghanistan</option>
+							<option value="102">Aland Islands</option>
+							<option value="65">Albania</option>
+							<option value="35">Algeria</option>
+							<option value="3">American Samoa</option>
+							<option value="68">Andorra</option>
+							<option value="36">Angola</option>
+							<option value="27">Anguilla</option>
+							<option value="91">Antarctica</option>
+							<option value="89">Antigua Barbuda</option>
+							<option value="19">Argentina</option>
+							<option value="28">Armenia</option>
+							<option value="38">Aruba</option>
+							<option value="20">Australia</option>
+							<option value="37">Austria</option>
+							<option value="103">Azerbaijan</option>
+							<option value="82">Bahamas</option>
+							<option value="105">Bahrain</option>
+							<option value="86">Bangladesh</option>
+							<option value="85">Barbados</option>
+							<option value="114">Belarus</option>
+							<option value="16">Belgium</option>
+							<option value="34">Belize</option>
+							<option value="107">Benin</option>
+							<option value="108">Bermuda</option>
+							<option value="111">Bhutan</option>
+							<option value="110">Bolivia</option>
+							<option value="67">Bosnia and Herzegovina</option>
+							<option value="113">Botswana</option>
+							<option value="112">Bouvet Island</option>
+							<option value="18">Brazil</option>
+							<option value="155">British Indian Ocean Territory</option>
+							<option value="109">Brunei Darussalam</option>
+							<option value="104">Bulgaria</option>
+							<option value="60">Burkina Faso</option>
+							<option value="106">Burundi</option>
+							<option value="84">Cambodia</option>
+							<option value="120">Cameroon</option>
+							<option value="5">Canada</option>
+							<option value="122">Cape Verde</option>
+							<option value="162">Cayman Islands</option>
+							<option value="117">Central African Republic</option>
+							<option value="224">Chad</option>
+							<option value="51">Chile</option>
+							<option value="8">China</option>
+							<option value="123">Christmas Island</option>
+							<option value="115">Cocos (Keeling) Islands</option>
+							<option value="99">Colombia</option>
+							<option value="159">Comoros</option>
+							<option value="53">Congo</option>
+							<option value="116">Congo, the Democratic Republic of
+								the</option>
+							<option value="119">Cook Islands</option>
+							<option value="121">Costa Rica</option>
+							<option value="97">Croatia</option>
+							<option value="52">Cuba</option>
+							<option value="124">Cyprus</option>
+							<option value="46">Czech Republic</option>
+							<option value="10">Denmark</option>
+							<option value="125">Djibouti</option>
+							<option value="126">Dominica</option>
+							<option value="41">Dominican Republic</option>
+							<option value="81">Ecuador</option>
+							<option value="127">Egypt</option>
+							<option value="220">El Salvador</option>
+							<option value="146">Equatorial Guinea</option>
+							<option value="129">Eritrea</option>
+							<option value="98">Estonia</option>
+							<option value="130">Ethiopia</option>
+							<option value="132">Falkland Islands (Malvinas)</option>
+							<option value="134">Faroe Islands</option>
+							<option value="131">Fiji</option>
+							<option value="4">Finland</option>
+							<option value="6">France</option>
+							<option value="138">French Guiana</option>
+							<option value="200">French Polynesia</option>
+							<option value="225">French Southern Territories</option>
+							<option value="135">Gabon</option>
+							<option value="143">Gambia</option>
+							<option value="137">Georgia</option>
+							<option value="7">Germany</option>
+							<option value="140">Ghana</option>
+							<option value="141">Gibraltar</option>
+							<option value="42">Greece</option>
+							<option value="142">Greenland</option>
+							<option value="136">Grenada</option>
+							<option value="145">Guadeloupe</option>
+							<option value="148">Guam</option>
+							<option value="43">Guatemala</option>
+							<option value="139">Guernsey</option>
+							<option value="144">Guinea</option>
+							<option value="149">Guinea-Bissau</option>
+							<option value="150">Guyana</option>
+							<option value="152">Haiti</option>
+							<option value="151">Heard Island and McDonald Islands</option>
+							<option value="235">Holy See (Vatican City State)</option>
+							<option value="79">Honduras</option>
+							<option value="33">Hong Kong</option>
+							<option value="74">Hungary</option>
+							<option value="62">Iceland</option>
+							<option value="70">India</option>
+							<option value="153">Indonesia</option>
+							<option value="244">Iran, Islamic Republic of</option>
+							<option value="243">Iraq</option>
+							<option value="13">Ireland</option>
+							<option value="154">Isle of Man</option>
+							<option value="44">Israel</option>
+							<option value="9">Italy</option>
+							<option value="118">Ivory Coast</option>
+							<option value="31">Jamaica</option>
+							<option value="17">Japan</option>
+							<option value="156">Jersey</option>
+							<option value="157">Jordan</option>
+							<option value="163">Kazahstan</option>
+							<option value="158">Kenya</option>
+							<option value="58">Kiribati</option>
+							<option value="161">Kuwait</option>
+							<option value="80">Kyrgyzstan</option>
+							<option value="87">Laos</option>
+							<option value="170">Latvia</option>
+							<option value="164">Lebanon</option>
+							<option value="169">Lesotho</option>
+							<option value="168">Liberia</option>
+							<option value="171">Libyan Arab Jamahiriya</option>
+							<option value="166">Liechtenstein</option>
+							<option value="69">Lithuania</option>
+							<option value="32">Luxembourg</option>
+							<option value="181">Macao</option>
+							<option value="177">Macedonia, the former Yugoslav
+								Republic of</option>
+							<option value="175">Madagascar</option>
+							<option value="189">Malawi</option>
+							<option value="40">Malaysia</option>
+							<option value="188">Maldives</option>
+							<option value="178">Mali</option>
+							<option value="186">Malta</option>
+							<option value="176">Marshall Islands</option>
+							<option value="183">Martinique</option>
+							<option value="184">Mauritania</option>
+							<option value="187">Mauritius</option>
+							<option value="240">Mayotte</option>
+							<option value="25">Mexico</option>
+							<option value="133">Micronesia, Federated States of</option>
+							<option value="174">Moldova, Republic of</option>
+							<option value="173">Monaco</option>
+							<option value="180">Mongolia</option>
+							<option value="185">Montserrat</option>
+							<option value="172">Morocco</option>
+							<option value="190">Mozambique</option>
+							<option value="179">Myanmar</option>
+							<option value="191">Namibia</option>
+							<option value="63">Nauru</option>
+							<option value="196">Nepal</option>
+							<option value="15">Netherlands</option>
+							<option value="71">Netherlands Antilles</option>
+							<option value="192">New Caledonia</option>
+							<option value="21">New Zealand</option>
+							<option value="195">Nicaragua</option>
+							<option value="193">Niger</option>
+							<option value="61">Nigeria</option>
+							<option value="197">Niue</option>
+							<option value="194">Norfolk Island</option>
+							<option value="96">North Korea</option>
+							<option value="182">Northern Mariana Islands</option>
+							<option value="11">Norway</option>
+							<option value="198">Oman</option>
+							<option value="101">Organization</option>
+							<option value="45">Pakistan</option>
+							<option value="205">Palau</option>
+							<option value="204">Palestinian Territory, Occupied</option>
+							<option value="199">Panama</option>
+							<option value="201">Papua New Guinea</option>
+							<option value="90">Paraguay</option>
+							<option value="83">Peru</option>
+							<option value="59">Philippines</option>
+							<option value="203">Pitcairn</option>
+							<option value="14">Poland</option>
+							<option value="24">Portugal</option>
+							<option value="50">Puerto Rico</option>
+							<option value="206">Qatar</option>
+							<option value="207">Reunion</option>
+							<option value="75">Romania</option>
+							<option value="92">Russian Federation</option>
+							<option value="208">Rwanda</option>
+							<option value="212">Saint Helena</option>
+							<option value="160">Saint Kitts and Nevis</option>
+							<option value="165">Saint Lucia</option>
+							<option value="202">Saint Pierre and Miquelon</option>
+							<option value="236">Saint Vincent and the Grenadines</option>
+							<option value="39">Samoa</option>
+							<option value="216">San Marino</option>
+							<option value="219">Sao Tome and Principe</option>
+							<option value="209">Saudi Arabia</option>
+							<option value="94">Senegal</option>
+							<option value="47">Serbia and Montenegro</option>
+							<option value="48">Seychelles</option>
+							<option value="215">Sierra Leone</option>
+							<option value="26">Singapore</option>
+							<option value="214">Slovakia</option>
+							<option value="64">Slovenia</option>
+							<option value="210">Solomon Islands</option>
+							<option value="217">Somalia</option>
+							<option value="29">South Africa</option>
+							<option value="147">South Georgia and the South Sandwich
+								Islands</option>
+							<option value="30">South Korea</option>
+							<option value="23">Spain</option>
+							<option value="167">Sri Lanka</option>
+							<option value="211">Sudan</option>
+							<option value="218">Suriname</option>
+							<option value="213">Svalbard and Jan Mayen</option>
+							<option value="222">Swaziland</option>
+							<option value="1">Sweden</option>
+							<option value="57">Switzerland</option>
+							<option value="221">Syrian Arab Republic</option>
+							<option value="49">Taiwan</option>
+							<option value="226">Tajikistan</option>
+							<option value="232">Tanzania, United Republic of</option>
+							<option value="93">Thailand</option>
+							<option value="228">Timor-Leste</option>
+							<option value="95">Togo</option>
+							<option value="227">Tokelau</option>
+							<option value="230">Tonga</option>
+							<option value="78">Trinidad and Tobago</option>
+							<option value="229">Tunisia</option>
+							<option value="55">Turkey</option>
+							<option value="66">Turkmenistan</option>
+							<option value="223">Turks and Caicos Islands</option>
+							<option value="231">Tuvalu</option>
+							<option value="233">Uganda</option>
+							<option value="72">Ukraine</option>
+							<option value="22">United Arab Emirates</option>
+							<option value="12">United Kingdom</option>
+							<option value="234">United States Minor Outlying Islands</option>
+							<option value="2">United States of America</option>
+							<option value="88">Uruguay</option>
+							<option value="56">Uzbekistan</option>
+							<option value="76">Vanuatu</option>
+							<option value="73">Venezuela</option>
+							<option value="77">Viet Nam</option>
+							<option value="237">Virgin Islands, British</option>
+							<option value="238">Wallis and Futuna</option>
+							<option value="128">Western Sahara</option>
+							<option value="239">Yemen</option>
+							<option value="241">Zambia</option>
+							<option value="242">Zimbabwe</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td align="left">Timezone:</td>
+					<td align="left" class="lista"><select name="timezone">
+							<option value="-1">(GMT - 1:00 hours) Azores, Cape Verde
+								Islands</option>
+							<option value="-10">(GMT - 10:00 hours) Hawaii</option>
+							<option value="-11">(GMT - 11:00 hours) Midway Island,
+								Samoa</option>
+							<option value="-12">(GMT - 12:00 hours) Enitwetok,
+								Kwajalien</option>
+							<option value="-2">(GMT - 2:00 hours) Mid-Atlantic,
+								Ascention Is., St Helena</option>
+							<option value="-3">(GMT - 3:00 hours) Brazil, Buenos
+								Aires, Falkland Is.</option>
+							<option value="-3.5">(GMT - 3:30 hours) Newfoundland</option>
+							<option value="-4">(GMT - 4:00 hours) Atlantic Time
+								(Canada), Caracas, La Paz</option>
+							<option selected="selected" value="-5">(GMT - 5:00
+								hours) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+							<option value="-6">(GMT - 6:00 hours) Central Time (US
+								&amp; Canada), Mexico City</option>
+							<option value="-7">(GMT - 7:00 hours) Mountain Time (US
+								&amp; Canada)</option>
+							<option value="-8">(GMT - 8:00 hours) Pacific Time (US
+								&amp; Canada)</option>
+							<option value="-9">(GMT - 9:00 hours) Alaska</option>
+							<option value="0">(GMT) Casablanca, Dublin, London,
+								Lisbon, Monrovia</option>
+							<option value="1">(GMT + 1:00 hours) Amsterdam,
+								Brussels, Copenhagen, Madrid, Paris</option>
+							<option value="10">(GMT + 10:00 hours) Melbourne, Papua
+								New Guinea, Sydney</option>
+							<option value="11">(GMT + 11:00 hours) Magadan, New
+								Caledonia, Solomon Is.</option>
+							<option value="12">(GMT + 12:00 hours) Auckland, Fiji,
+								Marshall Island</option>
+							<option value="2">(GMT + 2:00 hours) Kaliningrad, South
+								Africa</option>
+							<option value="3">(GMT + 3:00 hours) Baghdad, Riyadh,
+								Moscow, Nairobi</option>
+							<option value="3.5">(GMT + 3:30 hours) Tehran</option>
+							<option value="4">(GMT + 4:00 hours) Abu Dhabi, Baku,
+								Muscat, Tbilisi</option>
+							<option value="4.5">(GMT + 4:30 hours) Kabul</option>
+							<option value="5">(GMT + 5:00 hours) Ekaterinburg,
+								Karachi, Tashkent</option>
+							<option value="5.5">(GMT + 5:30 hours) Bombay, Calcutta,
+								Madras, New Delhi</option>
+							<option value="6">(GMT + 6:00 hours) Almaty, Colomba,
+								Dhakra</option>
+							<option value="7">(GMT + 7:00 hours) Bangkok, Hanoi,
+								Jakarta</option>
+							<option value="8">(GMT + 8:00 hours) Hong Kong, Perth,
+								Singapore, Taipei</option>
+							<option value="9">(GMT + 9:00 hours) Osaka, Sapporo,
+								Seoul, Tokyo, Yakutsk</option>
+							<option value="9.5">(GMT + 9:30 hours) Adelaide, Darwin</option>
+					</select></td>
+				</tr>
+
+				<tr>
+					<td align="left">Verification:</td>
+					<td align="left" class="lista"><script type="text/javascript"
+							src="http://www.google.com/recaptcha/api/challenge?k=6LeXC9MSAAAAAE4qbGp6ghLVY-nMI_6BZUnJ0HKk"></script>
+					</td>
+				</tr>
+
+			</table>
+			<input style='margin: 0px 0px 0px 123px' type="submit" name="submit"
+				value="Submit" />
+		</form>
 	</div>
 </body>
 </html>

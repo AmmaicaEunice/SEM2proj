@@ -4,6 +4,11 @@
 <script src="dots.js"></script>
 <script src="jquery.js"></script>
 <script src="jquery2.js"></script>
+<script>
+	window.onload = function() {
+		document.getElementById("username").innerHTML = "Guest";
+	}
+</script>
 </head>
 <body>
 <div class="header">
@@ -13,11 +18,13 @@ LRT1 Landmarks
 <div class="menu">
 <p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="main.html" id="link"><img src="Images\HomeImage.png"></a>           
+		<a href="main.html" id="link"><img src="Images/HomeImage.png"></a>           
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<a href="stations.html" id="link">Stations</a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
 		<a href="about.html" id="link">About</a> 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hello, <label
+					id="username"></label>!
 </p>
 </div>
 </div>
