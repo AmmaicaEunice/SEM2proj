@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: #e9f1f4;
+	background-color: #edf4f7;
 	margin: 0px;
 	padding: 0px;
 }
@@ -27,7 +27,13 @@ body {
 	z-index:100;
 	margin: 0 auto;
 }
-
+#head{
+	color: white;
+	font-family: iron;
+	text-align: left;
+	padding-left: 145;
+	height: 10px;
+}
 .menu{
 	width: 80%;
 	height: 10%;
@@ -36,9 +42,9 @@ body {
 	background-color: #7b29c0;
 	font-family: Calibri;
 	position:fixed;
-	padding: 5;
 	z-index:101; /*just to set this as the topmost div. can change to any value not less than the number of divs*/
-	margin: 25 auto;
+	margin: 0 auto;
+	box-shadow: 2px 2px 2px #888888;
 }
 
 .filler2{
@@ -64,6 +70,15 @@ body {
 }
 
 #welcome{
+	height: 10px;
+	color: #3d0d6d;
+	font-family: iron;
+	text-align: left;
+	padding-left: 145;
+}
+
+#stationhead{
+	height: 70px;
 	color: #3d0d6d;
 	font-family: iron;
 	text-align: left;
@@ -125,7 +140,7 @@ body {
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
-	-ms-user-selectcu: none;
+	-ms-user-select: none;
 	user-select: none;
 }
 
@@ -143,7 +158,7 @@ body {
 	cursor: pointer;
 }
 
-.dotstyle li a {
+.dotstyle li p {
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -157,7 +172,7 @@ body {
 	position: absolute;
 }
 
-.dotstyle li a:focus {
+.dotstyle li p:focus {
 	outline: none;
 }
 
@@ -169,7 +184,7 @@ body {
 	transition: border-color 0.3s ease;
 }
 
-.dotstyle-tooltip li a {
+.dotstyle-tooltip li p {
 	top: auto;
 	bottom: 250%;
 	left: 50%;
@@ -189,7 +204,7 @@ body {
 	transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s ease;
 }
 
-.dotstyle-tooltip li a::after { /* http: //cssarrowplease.com/ */
+.dotstyle-tooltip li p::after { /* http: //cssarrowplease.com/ */
 	position: absolute;
 	left: 50%;
 	margin-left: -10px;
@@ -208,7 +223,7 @@ body {
 	transition: opacity 0.3s ease;
 }
 
-.dotstyle-tooltip li:hover a {
+.dotstyle-tooltip li:hover p {
 	z-index: 100;
 	visibility: visible;
 	opacity: 1;
@@ -218,14 +233,68 @@ body {
 	transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+.dotstyle-tooltip li.current {
+	border-color: #c44d48;
+}
+
 .dotstyle-tooltip li:hover {
 	z-index: 100;
 }
 
-.no-touch .dotstyle-tooltip ul:hover li.current a {
+.no-touch .dotstyle-tooltip ul:hover li.current p {
 	opacity: 0.2;
 }
 
-.dotstyle-tooltip ul li.current:hover a {
+.dotstyle-tooltip ul li.current:hover p {
 	opacity: 1;
 }
+
+.content {
+	right: 40px;
+	left: 280px;
+	top: 0px;
+	position: absolute;
+	z-index: 10;
+}
+.content h2{
+	font-size: 110px;
+	margin-top: 52px;
+	color: #fff;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+.content p , .landmarks p{
+	font-size: 18px;
+	padding: 10px;
+	line-height: 24px;
+	color: #fff;
+	display: inline-block;
+	background: black;
+	padding: 10px;
+	margin: 5px 0px;
+}
+
+.landmarks {
+	background-image: url('Images/MainBanner.png');
+	width: 949;
+	height: 532;
+	margin: 0 auto;
+}
+
+.panel{
+	width: 949;
+	height: 532;
+	position: absolute;
+	box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+	opacity: 0;
+	-webkit-transition: opacity .6s ease-in-out;
+	-moz-transition: opacity .6s ease-in-out;
+	-o-transition: opacity .6s ease-in-out;
+	-ms-transition: opacity .6s ease-in-out;
+	transition: opacity .6s ease-in-out;
+}
+
+.panel:target{
+	opacity: 1;
+}
+
