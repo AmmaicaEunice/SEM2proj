@@ -5,10 +5,13 @@ body {
 }
 
 .header {
-	width: 1700;
-	height: 200;
+	width: 100%;
+	height: auto;
 	background-color: FEDBC5;
-	background-image: url("Images/BackgroundHeader.png");
+	background-image: url("/SEM2_Project/Images/BackgroundHeader.png");
+	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
 }
 
 .LRT {
