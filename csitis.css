@@ -1,0 +1,129 @@
+/*para sa drop down menu*/
+
+ul.ddMenu, ul.ddMenu ul
+	{
+	list-style:none;
+	margin:0; padding:0;
+	}
+
+ul.ddMenu ul 						
+	{ 
+        display:none;
+        position: absolute; 
+		border:1px solid black;
+        padding:1px;
+        background:black;
+	}
+
+ul.ddMenu li:hover > ul 			
+	{ 
+	display:block;
+	}	
+
+ul.ddMenu li a
+        {
+        display: block; 
+        padding: 5px; 
+        color:white;
+        font-family:Century Gothic;
+        font-size: 15px;
+    }
+
+ul.ddMenu li:hover
+        { 
+        background:black;
+    }
+
+ul.ddMenu li
+        { 
+        background:black;
+    }
+	
+/*para sa accordion layout*/
+
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	padding: .5em .5em .5em .7em;
+}
+.ui-accordion .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-noicons {
+	padding-left: .7em;
+}
+.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+	position: absolute;
+	left: .5em;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 1em 2.2em;
+	border-top: 0;
+	overflow: auto;
+}
+
+
+
+/*para sa designs ng web*/
+
+a:link {color:white;}
+a:visited {color:white;}
+a:hover.cs{color:green;}
+a:hover.it{color:red;}
+a:hover.is{color:orange;}
+a:active{color:white;}
+
+	
+body
+{
+	background-color:silver;
+}
+
+div
+{
+	background-color: gray;
+}
+
+tr.head
+{
+	font-family:Century Gothic;
+	background-image:url('thead.jpg');
+	text-align:center;
+	
+}
+
+tr.content
+{
+	font-family:Century Gothic;
+	background-color:#FFF380;
+	text-align:center;
+}
+
+tr.content2
+{
+	font-family:Century Gothic;
+	background-color:#EDE275;
+	text-align:center;
+}
+
+fieldset
+{
+	background-color:silver;
+	font-family:Century Gothic;
+}
+
+p
+{
+	font-family:Tahoma;
+}
+
+legend
+{
+	color:#302226;
+}
