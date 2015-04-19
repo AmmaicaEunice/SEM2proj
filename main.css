@@ -4,6 +4,11 @@
 	src: url('fonts/Iron & Brine.ttf');
 }
 
+@font-face {
+    font-family: bebas;
+    src: url('Fonts/BEBAS__.ttf');
+}
+
 body {
 	background-color: #edf4f7;
 	margin: 0px;
@@ -55,6 +60,8 @@ body {
 	background-color: 369F9A;
 	width: 1050px;
 	margin: 0 auto ;
+	box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+	border-radius:5px;
 }
 
 .main{
@@ -79,7 +86,7 @@ body {
 
 #stationhead{
 	height: 70px;
-	color: #3d0d6d;
+	color: #058a92;
 	font-family: iron;
 	text-align: left;
 	padding-left: 145;
@@ -111,22 +118,6 @@ body {
 	box-shadow: 2px 2px 2px #888888;
 	margin: 0 auto;	
 	text-decoration: none;
-}
-
-.two {
-	margin-left: 30px;
-}
-
-.three {
-	margin-left: 60px;
-}
-
-.four {
-	margin-left: 90px;
-}
-
-.five {
-	margin-left: 120px;
 }
 
 .dotstyle ul {
@@ -168,6 +159,7 @@ body {
 	background-color: #fff;
 	background-color: rgba(255, 255, 255, 0.3);
 	text-indent: -999em; /* make the text accessible to screen readers */
+	font-family:bebas;
 	cursor: pointer;
 	position: absolute;
 }
@@ -180,8 +172,8 @@ body {
 	border: 2px solid #fff;
 	border-radius: 50%;
 	z-index: 1;
-	-webkit-transition: border-color 0.3s ease;
-	transition: border-color 0.3s ease;
+	-webkit-transition: border-color 0.6s ease, background-color 0.6s ease;
+	transition: border-color 0.6s ease, background-color 0.6s ease;
 }
 
 .dotstyle-tooltip li p {
@@ -235,10 +227,13 @@ body {
 
 .dotstyle-tooltip li.current {
 	border-color: #c44d48;
+	background-color: #c44d48;
 }
 
 .dotstyle-tooltip li:hover {
 	z-index: 100;
+	border-color: #c44d48;
+	background-color: #c44d48;
 }
 
 .no-touch .dotstyle-tooltip ul:hover li.current p {
@@ -249,6 +244,8 @@ body {
 	opacity: 1;
 }
 
+/* slide content */
+
 .content {
 	right: 40px;
 	left: 280px;
@@ -257,6 +254,7 @@ body {
 	z-index: 10;
 }
 .content h2{
+	font-family: bebas;
 	font-size: 110px;
 	margin-top: 52px;
 	color: #fff;
@@ -297,4 +295,3 @@ body {
 .panel:target{
 	opacity: 1;
 }
-
